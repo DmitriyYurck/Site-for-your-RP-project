@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    background-image: url('https://sampik.ru/uploads/posts/2022-06/1655415277_sampik.ru_istorija-sozdanija-crmp-1.webp'); /* URL замените на нужный путь к изображению */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #000000;
+    animation: slideIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 2em;
+    position: relative;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a .fab {
+    transition: filter 0.3s, box-shadow 0.3s;
+}
+
+nav ul li a:hover .fab {
+    filter: drop-shadow(0 0 0.75rem currentColor);
+    box-shadow: 0 0 10px currentColor;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-in;
+    box-sizing: border-box;
+    background-image: url('https://via.placeholder.com/1920x1080'); /* URL замените на нужный путь к изображению */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    background-image: url("https://gta.crmp.su/data/uploads/iv/cr-gta-4-4.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero h2, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.btn-download {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-download:hover {
+    background-color: #6A0DAD;
+    transform: translateY(-3px);
+}
+
+.about {
+    padding: 30px 20px;
+    animation: slideIn 1s ease-in-out;
+    box-sizing: border-box;
+    background-color: #222222;
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: "";
+    background-image: url('https://gta.crmp.su/data/uploads/iv/cr-gta-4-5.jpg'); /* URL замените на нужный путь к изображению */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.about h3, .about p {
+    position: relative;
+    z-index: 1;
+}
+
+.about h3 {
+    font-size: 2em;
+    color: #000000;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #888;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
